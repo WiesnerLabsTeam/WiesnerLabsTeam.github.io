@@ -4,13 +4,13 @@ import Button from '../ui/Button';
 import AppPreview from '../ui/AppPreview';
 import { projects } from '../../content/site';
 
-// 项目区：重点项目（Forma）大卡片 + 即将公布的占位项目
+// 产品区：Forma 大卡片
 export default function Projects() {
   const f = projects.featured;
   return (
     <section className="section" id="projects">
       <div className="container">
-        <SectionHead {...projects.head} aside="01 / Forma" />
+        <SectionHead {...projects.head} />
 
         <Reveal className="feature">
           <div className="feature-info">
@@ -30,16 +30,6 @@ export default function Projects() {
           </div>
           <div className="feature-visual"><AppPreview title={f.name} /></div>
         </Reveal>
-
-        <div className="upcoming">
-          {projects.upcoming.map((p, i) => (
-            <Reveal key={i} className="soon" delay={i * 100}>
-              <span className="label">Coming soon</span>
-              <h3>{p.name}</h3>
-              <p>{p.note}</p>
-            </Reveal>
-          ))}
-        </div>
       </div>
     </section>
   );

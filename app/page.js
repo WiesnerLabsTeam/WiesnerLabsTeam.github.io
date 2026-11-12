@@ -2,9 +2,6 @@
 import { VueNav } from '../components/VueParts';
 import Hero from '../components/sections/Hero';
 import Projects from '../components/sections/Projects';
-import Process from '../components/sections/Process';
-import Principles from '../components/sections/Principles';
-import Updates from '../components/sections/Updates';
 import Team from '../components/sections/Team';
 import Join from '../components/sections/Join';
 import SiteFooter from '../components/sections/SiteFooter';
@@ -17,9 +14,6 @@ export default function Home() {
       <main id="top">
         <Hero />
         <Projects />
-        <Process />
-        <Principles />
-        <Updates />
         <Team />
         <Join />
       </main>
